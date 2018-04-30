@@ -7,7 +7,9 @@ import {
 import FirstPage from "./FirstPage";
 import About from "./About";
 import Knowledge from "./Knowledge";
+import Exp from "./Exp";
 import Contact from "./Contact";
+import {} from 'react-bootstrap';
  
 class Main extends React.Component {
   render() {
@@ -15,16 +17,17 @@ class Main extends React.Component {
         <HashRouter>
             <div>
                 <ul className="header">
-                    <li><NavLink exact to="/">Kanya</NavLink></li>
-                    <li><NavLink to="/About">OM MIG</NavLink></li>
-                    <li><NavLink to="/Knowledge">KUNSKAPER</NavLink></li>
-                    <li><NavLink to="/#">ERFARENHET</NavLink></li>
-                    <li><NavLink to="/Contact">KONTAKT</NavLink></li>
+                    <li className="nav-li"><NavLink exact to="/">K A N Y A R A T</NavLink></li>
+                    <li className="nav-li float-right"><NavLink to="/Contact">KONTAKT</NavLink></li>
+                    <li className="nav-li float-right"><NavLink to="/Exp">ERFARENHET</NavLink></li>
+                    <li className="nav-li float-right"><NavLink to="/Knowledge">KUNSKAPER</NavLink></li>
+                    <li className="nav-li float-right"><NavLink to="/About">OM MIG</NavLink></li>
                 </ul>
                 <div className="content">
                     <Route exact path="/" component={FirstPage}/>
                     <Route path="/About" component={About}/>
                     <Route path="/Knowledge" component={Knowledge}/>
+                    <Route path="/Exp" component={Exp}/>
                     <Route path="/Contact" component={Contact}/>
                 </div>
             </div>
