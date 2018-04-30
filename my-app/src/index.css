@@ -69,6 +69,26 @@ ul.header li a {
 /* ----------------- FirtPage Styling ------------------ */
 
 .vertical-mid {
-  margin-top: 15%;
+  margin-top: 10%;
   margin-bottom: 15%;
 }
+
+/* ------------------ FirstPage Styling ends ----------------- */
+
+
+/* ------------------ Contact-page Styling -------------------- */
+
+.form-submit-btn {
+  background-color: #FF708B !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.form-submit-btn:hover {
+  background-color: rgba(177, 85, 103, 0) !important;
+  border: 1px solid #FFFFFF !important;
+  color: #FFFFFF !important;
+  box-shadow: none !important;
+}
+
+/* ------------------ Contact-page Styling ends -------------------- */

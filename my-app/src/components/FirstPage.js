@@ -4,8 +4,8 @@ class FirstPage extends React.Component {
  render() {
    return (
      <div className="vertical-mid">
-        <h3 className="text-center">I AM</h3>
-        <h1 className="text-center">KANYARAT</h1>
+        <h1 className="text-center mb-4">K A N Y A R A T</h1>
+        <h3 className="text-center">The Front End Developer</h3>
      </div>
    );
  }
