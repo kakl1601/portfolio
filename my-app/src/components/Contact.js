@@ -4,7 +4,7 @@ import { Container, Row, Col, Button, Form, FormGroup, Label, Input, FormText } 
 class Contact extends React.Component {
   render() {
     return (
-        <Container>
+        <Container className="contact-container">
             <Row>
                 <Col className="col-md .col-md-offset-1">
                     <h4 className="text-center mb-5">Leave a comment</h4>
@@ -36,7 +36,10 @@ class Contact extends React.Component {
                 </Col>
                 <Col className="col-md .col-md-offset-1">
                     <h4 className="text-center">Comments</h4>
-
+                    <div className="a-comment ">
+                        <h4>Name: </h4>
+                        <p>Comment text...</p>
+                    </div>
                 </Col>
             </Row>
         </Container>

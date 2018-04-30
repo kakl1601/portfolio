@@ -13,6 +13,9 @@ h1, h2, p, ul, li {
   font-family: sans-serif;
 }
 
+
+
+
 /* -------------- Nav-bar Styling ----------------- */
 
 ul.header li {
@@ -46,6 +49,7 @@ ul.header li a {
 
 
 
+
 /* -------------- Content Styling ----------------- */
 
 .content {
@@ -66,17 +70,39 @@ ul.header li a {
 
 
 
+
 /* ----------------- FirtPage Styling ------------------ */
 
+.k {
+  font-size: 2em;
+}
+
+.first-page-div-kanyatext {
+  font-family: 'Cookie', cursive;
+  font-size: 4em;
+  letter-spacing: 0.03em;
+}
+
+.first-page-div-undertext {
+  font-family: 'Cookie', cursive;
+  font-size: 3em;
+}
+
 .vertical-mid {
-  margin-top: 10%;
-  margin-bottom: 15%;
+  margin-top: 5%;
+  margin-bottom: 10%;
 }
 
 /* ------------------ FirstPage Styling ends ----------------- */
 
 
+
+
 /* ------------------ Contact-page Styling -------------------- */
+
+.contact-container {
+  font-family: 'Raleway', sans-serif;
+}
 
 .form-submit-btn {
   background-color: #FF708B !important;
