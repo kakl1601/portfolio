@@ -1,5 +1,5 @@
 body {
-  background-color: #FF82AC;
+  background-color: #BFFBFF;
   padding: 20px;
   margin: 0;
   min-height: 100vh !important;
@@ -24,12 +24,22 @@ ul.header {
   background-color: rgba(17, 17, 17, 0);
   padding: 0;
 }
+
+ul.header li:hover {
+  background-color: rgb(0, 0, 0);
+  transition-duration: 1s;
+}
+
 ul.header li a {
   color: #FFF;
   font-weight: bold;
   text-decoration: none;
   padding: 20px;
   display: inline-block;
+}
+
+.active {
+  background-color: rgb(0, 0, 0)
 }
 
 /* -------------- Nav-bar Styling ends ----------------- */
@@ -39,9 +49,10 @@ ul.header li a {
 /* -------------- Content Styling ----------------- */
 
 .content {
-  background-color: rgba(255, 255, 255, 0.54);
+  background-color: rgba(255, 255, 255, 0.32);
   padding: 20px;
   min-height: 80vh;
+  color: white;
 }
 .content h2 {
   padding: 0;
@@ -51,9 +62,13 @@ ul.header li a {
   margin-bottom: 10px;
 }
 
-.active {
-  background-color: rgb(0, 0, 0)
-}
-
 /* -------------- Content Styling ends ----------------- */
 
+
+
+/* ----------------- FirtPage Styling ------------------ */
+
+.vertical-mid {
+  margin-top: 15%;
+  margin-bottom: 15%;
+}

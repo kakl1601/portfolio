@@ -18,10 +18,10 @@ class Main extends React.Component {
             <div>
                 <ul className="header">
                     <li className="nav-li"><NavLink exact to="/">K A N Y A R A T</NavLink></li>
-                    <li className="nav-li float-right"><NavLink to="/About">OM MIG</NavLink></li>
-                    <li className="nav-li float-right"><NavLink to="/Knowledge">KUNSKAPER</NavLink></li>
-                    <li className="nav-li float-right"><NavLink to="/Exp">ERFARENHET</NavLink></li>
                     <li className="nav-li float-right"><NavLink to="/Contact">KONTAKT</NavLink></li>
+                    <li className="nav-li float-right"><NavLink to="/Exp">ERFARENHET</NavLink></li>
+                    <li className="nav-li float-right"><NavLink to="/Knowledge">KUNSKAPER</NavLink></li>
+                    <li className="nav-li float-right"><NavLink to="/About">OM MIG</NavLink></li>
                 </ul>
                 <div className="content">
                     <Route exact path="/" component={FirstPage}/>
