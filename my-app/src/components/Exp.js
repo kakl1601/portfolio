@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import {Container, Col, Row} from "reactstrap";
+import {tiger} from '../img/white_tiger.jpg';
+import {coins} from '../img/coints.png';
 
 class Exp extends React.Component {
   render() {
@@ -12,11 +14,13 @@ class Exp extends React.Component {
           <Col>
             <Row className="justify-content-center">
               <h5>TIGER LMS</h5>
+              <img src={tiger} />
             </Row>
           </Col>
           <Col>
             <Row className="justify-content-center">
               <h5>CATCH COINS</h5>
+              <img src={coins} />
             </Row>
           </Col>
           <Col>
