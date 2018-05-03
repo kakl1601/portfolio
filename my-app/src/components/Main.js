@@ -11,7 +11,7 @@ import Exp from "./Exp";
 import Contact from "./Contact";
 import {} from 'react-bootstrap';
 const API = 'https://api.openweathermap.org/data/2.5/weather?q=stockholm,se&APPID=f8384513fad5f91ea04d07a2cbf916ec'
-const COMMENT_API = 'http://localhost:8080/comment'
+const COMMENT_API = 'https://callejoverbackend.herokuapp.com/api/comments'
  
 class Main extends React.Component {
     constructor(props) {
@@ -55,7 +55,7 @@ class Main extends React.Component {
                         <Route path="/About" component={About}/>
                         <Route path="/Knowledge" component={Knowledge}/>
                         <Route path="/Exp" component={Exp}/>
-                        <Route path="/Contact" component={Contact}/>
+                        <Route path="/Contact" render={() => <Contact comment={this.state.comment} />}/>
                     </div>
                 </div>
             </HashRouter>

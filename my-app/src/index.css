@@ -94,9 +94,6 @@ ul.header li a {
 }
 
 .bottom-text {
-  position: absolute;
-  right: 0;
-  bottom: 0;
   text-shadow: 2px 2px 3px #6E6E6E;
   font-size: 1em;
 }
@@ -152,6 +149,11 @@ ul.header li a {
 .social-icon {
   width: 20%;
   height: 100%;
+}
+
+.social-icon:hover {
+  transform: rotate(360deg);
+  transition-duration: 1s;
 }
 
 /* ------------------ Contact-page Styling ends -------------------- */
