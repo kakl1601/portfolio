@@ -11,6 +11,8 @@ REST_ROUTER.prototype.handleRoutes= function(router,connection,md5) {
     })
 
     router.get("/comments",function(req,res){
+        res.setHeader('Access-Control-Allow-Origin', '*');
+        res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
         var query = "SELECT * FROM ??";
         var table = ["comments"];
         query = mysql.format(query,table);
@@ -23,18 +25,22 @@ REST_ROUTER.prototype.handleRoutes= function(router,connection,md5) {
         });
     });
 
-   /*  router.post("/comment",function(req,res){
-        var query = "INSERT INTO ??(??,??) VALUES (?,?)";
-        var table = ["comments"];
+    router.post("/comments",function(req,res){
+        res.setHeader('Access-Control-Allow-Origin', '*');
+        res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+        res.setHeader('Access-Control-Allow-Methods: GET, POST, PATCH, PUT, DELETE, OPTIONS');
+        var query = "INSERT INTO ??(??,??) VALUES (?)";
+        var table = ["comments","name","comments",req.body.author,req.body.body];
         query = mysql.format(query,table);
         connection.query(query,function(err,rows){
             if(err) {
                 res.json({"Error" : true, "Message" : "Error executing MySQL query"});
             } else {
-                res.json({"Error" : false, "Message" : "User Added !"});
+                res.json({"Error" : false, "Message" : "Comment Added !"});
             }
         });
-    }); */
+    });
+
 
 }
 

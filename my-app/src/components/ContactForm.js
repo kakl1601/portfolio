@@ -26,12 +26,8 @@ class ContactForm extends React.Component {
         }
     
       handleSubmit(event) {
-          fetch('https://callejoverbackend.herokuapp.com/api/comments',
+          fetch('http://localhost:8080/api/comments',
         {
-            headers: {
-              'Accept': 'application/json',
-              'Content-Type': 'application/json'
-            },
             method: "POST",
             body: JSON.stringify({author: this.state.author, body: this.state.body})
         })
@@ -40,6 +36,9 @@ class ContactForm extends React.Component {
   
         alert('A message by: ' + this.state.author + ' has been posted and it contained: ' + this.state.body);
         event.preventDefault();
+
+        console.log(this.state.author);
+
       }
 
   render() {
@@ -48,13 +47,13 @@ class ContactForm extends React.Component {
             <FormGroup row>
                 <Label for="author" sm={2}>Name</Label>
                 <Col sm={10}>
-                    <Input name="author" type="text" value={this.state.value} onChange={this.handleInputChange} />
+                    <Input name="author" id="author" type="text" value={this.state.value} onChange={this.handleInputChange} />
                 </Col>
             </FormGroup>
             <FormGroup row>
                 <Label for="body" sm={2}>Comment</Label>
                 <Col sm={10}>
-                    <Input type="textarea" name="body" value={this.state.value} onChange={this.handleInputChange} />
+                    <Input type="textarea" name="body" id="body" value={this.state.value} onChange={this.handleInputChange} />
                     </Col>
                 </FormGroup>
                 <FormGroup check row>

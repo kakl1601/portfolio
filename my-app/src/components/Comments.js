@@ -3,7 +3,7 @@ import { Container, Row, Col, Button, Form, FormGroup, Label, Input, FormText } 
 import * as mysql from 'mysql';
  
 class Comments extends React.Component {
-  render() {
+    render() {
         return (
             <div className="col-md .col-md-offset-1 mt-5">
                 <h4>Comments</h4>
