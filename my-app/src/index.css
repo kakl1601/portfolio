@@ -93,6 +93,11 @@ ul.header li a {
   margin-bottom: 10%;
 }
 
+.bottom-text {
+  text-shadow: 2px 2px 3px #6E6E6E;
+  font-size: 1em;
+}
+
 /* ------------------ FirstPage Styling ends ----------------- */
 
 
@@ -144,6 +149,11 @@ ul.header li a {
 .social-icon {
   width: 20%;
   height: 100%;
+}
+
+.social-icon:hover {
+  transform: rotate(360deg);
+  transition-duration: 1s;
 }
 
 /* ------------------ Contact-page Styling ends -------------------- */
