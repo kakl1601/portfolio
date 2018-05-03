@@ -51,9 +51,9 @@ class Contact extends React.Component {
                             <div className="social mt-5">
                                 <h4>FÖLJ MIG</h4> 
                                 <Row className="mt-4">  
-                                <Col className="pl-5"><a href="https://www.facebook.com/kaewaiize"><img src="http://simpleicon.com/dev/wp-content/uploads/facebook-2-256x256.png" className="social-icon" /></a></Col>
-                                <Col className="icon-col"><a href="https://twitter.com/Kaewaiize"><img src="https://www.shareicon.net/download/2015/08/04/79820_circle_512x512.png" className="social-icon"/></a></Col>
-                                <Col className="icon-col"><a href="https://www.linkedin.com/in/kanyarat-klayjinda-5744b7bb"><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_circle_black-512.png" className="social-icon"/></a></Col>
+                                <Col><a href="https://www.facebook.com/kaewaiize"><img src="http://simpleicon.com/dev/wp-content/uploads/facebook-2-256x256.png" className="social-icon" /></a></Col>
+                                <Col><a href="https://twitter.com/Kaewaiize"><img src="https://www.shareicon.net/download/2015/08/04/79820_circle_512x512.png" className="social-icon"/></a></Col>
+                                <Col><a href="https://www.linkedin.com/in/kanyarat-klayjinda-5744b7bb"><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_circle_black-512.png" className="social-icon"/></a></Col>
                                 </Row>
                             </div>  
                         </div>
