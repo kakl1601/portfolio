@@ -134,4 +134,18 @@ ul.header li a {
   box-shadow: none !important;
 }
 
+.a-comment {
+  background-color: hsla(350, 100%, 68%, 0.54);
+  border-radius: 1em 1em 1em 1em;
+}
+
+.social-icon {
+  width: 20%;
+  height: 100%;
+}
+
+.icon-col {
+  
+}
+
 /* ------------------ Contact-page Styling ends -------------------- */
