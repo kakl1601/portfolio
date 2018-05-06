@@ -36,7 +36,7 @@
 
 .c100 {
   position: relative;
-  font-size: 120px;
+  font-size: 10em;
   width: 1em;
   height: 1em;
   -webkit-border-radius: 50%;
@@ -45,8 +45,9 @@
   -o-border-radius: 50%;
   border-radius: 50%;
   float: left;
-  margin: 0 0.1em 0.1em 0;
+  margin: 0 0 0 0;
   background-color: #cccccc;
+  text-align: center;
 }
 .c100 *, .c100 *:before, .c100 *:after {
   -webkit-box-sizing: content-box;

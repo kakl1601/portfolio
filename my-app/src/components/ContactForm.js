@@ -12,49 +12,62 @@ class ContactForm extends React.Component {
     
         this.handleInputChange = this.handleInputChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
-      }
+    }
     
-      handleInputChange(event) {
-          const target = event.target;
-          const value = target.value;
-          const name = target.name;
+    handleInputChange(event) {
+        const target = event.target;
+        const value = target.value;
+        const name = target.name;
   
-          this.setState({
+        this.setState({
             [name]: value
-          });
+        });
           //console.log(target.value);
-        }
+    }
     
-      handleSubmit(event) {
-          fetch('https://callejoverbackend.herokuapp.com/api/comments',
+    handleSubmit(event) {
+
+        fetch('http://localhost:8080/api/comments')
+        .then(function(response) {
+          return response.json();
+        })
+        .then(function(myJson) {
+          console.log(myJson);
+        });
+
+
+        fetch('http://localhost:8080/api/comments',
         {
-            headers: {
-              'Accept': 'application/json',
-              'Content-Type': 'application/json'
-            },
             method: "POST",
             body: JSON.stringify({author: this.state.author, body: this.state.body})
         })
-        .then(function(res){ console.log(res) })
-        .catch(function(res){ console.log(res) })
+        .then(function(res){ 
+            console.log(res);
+        })
+        .catch(function(res){ 
+            console.log(res); 
+        })
   
         alert('A message by: ' + this.state.author + ' has been posted and it contained: ' + this.state.body);
         event.preventDefault();
-      }
 
-  render() {
-    return (
-        <Form onSubmit={this.handleSubmit}>
-            <FormGroup row>
-                <Label for="author" sm={2}>Name</Label>
-                <Col sm={10}>
-                    <Input name="author" type="text" value={this.state.value} onChange={this.handleInputChange} />
-                </Col>
-            </FormGroup>
-            <FormGroup row>
-                <Label for="body" sm={2}>Comment</Label>
-                <Col sm={10}>
-                    <Input type="textarea" name="body" value={this.state.value} onChange={this.handleInputChange} />
+        console.log(this.state.author);
+
+    }
+    
+    render() {
+        return (
+            <Form action="/comments" onSubmit={this.handleSubmit} method="post">
+                <FormGroup row>
+                    <Label for="author" sm={2}>Name</Label>
+                    <Col sm={10}>
+                        <Input name="author" id="author" type="text" value={this.state.value} onChange={this.handleInputChange} />
+                    </Col>
+                </FormGroup>
+                <FormGroup row>
+                    <Label for="body" sm={2}>Comment</Label>
+                    <Col sm={10}>
+                        <Input type="textarea" name="body" id="body" value={this.state.value} onChange={this.handleInputChange} />
                     </Col>
                 </FormGroup>
                 <FormGroup check row>

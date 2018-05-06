@@ -118,6 +118,19 @@ ul.header li a {
 /* ------------------ About-component Styling ends -------------------- */
 
 
+/* ------------------- Exp comp Styling ------------------------- */
+
+
+
+.proj-pic {
+  width: 60%;
+  height: 75%;
+}
+
+
+/* ------------------- Exp comp Styling ends ------------------------- */
+
+
 
 
 /* ------------------ Contact-page Styling -------------------- */
@@ -147,13 +160,21 @@ ul.header li a {
 }
 
 .social-icon {
-  width: 20%;
+  width: 40%;
   height: 100%;
 }
 
 .social-icon:hover {
   transform: rotate(360deg);
   transition-duration: 1s;
+}
+
+.none-dec {
+  color: #FFFFFF;
+}
+
+.none-dec:hover {
+  color: #FFFFFF;
 }
 
 /* ------------------ Contact-page Styling ends -------------------- */

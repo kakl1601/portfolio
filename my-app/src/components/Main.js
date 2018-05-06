@@ -11,7 +11,7 @@ import Exp from "./Exp";
 import Contact from "./Contact";
 import {} from 'react-bootstrap';
 const API = 'https://api.openweathermap.org/data/2.5/weather?q=stockholm,se&APPID=f8384513fad5f91ea04d07a2cbf916ec'
-const COMMENT_API = 'https://callejoverbackend.herokuapp.com/api/comments'
+const COMMENT_API = 'http://localhost:8080/api/comments'
  
 class Main extends React.Component {
     constructor(props) {
