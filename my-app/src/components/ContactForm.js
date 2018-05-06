@@ -39,10 +39,6 @@ class ContactForm extends React.Component {
         fetch('http://localhost:8080/api/comments',
         {
             method: "POST",
-            /* headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            }, */
             body: JSON.stringify({author: this.state.author, body: this.state.body})
         })
         .then(function(res){ 
