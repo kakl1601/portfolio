@@ -10,9 +10,9 @@ class Contact extends React.Component {
             <Container>
             <Row>
                 <Col className="col-md .col-md-offset-1">
-                    <h4 className="text-center mb-5">Leave a comment</h4>
+                    <h4 className="text-center mb-5 mt-5">Leave a comment</h4>
                     <ContactForm />
-                    <Comments />
+                    {/* <Comments /> */}
                 </Col>
                 <Col>
                     <Row className="justify-content-center mt-5">
