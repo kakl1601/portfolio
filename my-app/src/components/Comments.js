@@ -14,7 +14,7 @@ class Comments extends React.Component {
                     this.props.comment.map((value) => {
                         return (
                             <div key={value.ID} className="a-comment mt-2 mb-2">
-                            <h6 className="pt-2 pr-2 pb-1 pl-3">From: {value.name}</h6>
+                            <h6 className="pt-2 pr-2 pb-1 pl-3"><strong>From: {value.name}</strong></h6>
                             <p className="pr-2 pb-2 pl-3">{value.comments}</p>
                             </div>
                     
