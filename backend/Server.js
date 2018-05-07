@@ -43,8 +43,8 @@ REST.prototype.configureExpress = function(connection) {
 }
 
 REST.prototype.startServer = function() {
-      app.listen(8080,function(){
-          console.log("All right ! I am alive at Port 8080.");
+      app.listen(process.env.PORT || 8080,function(){
+          console.log("All right ! I am alive at maybe Port 8080.");
       });
 }
 

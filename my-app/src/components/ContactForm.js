@@ -52,7 +52,7 @@ class ContactForm extends React.Component {
             console.log(res); 
         })
   
-        alert('A message by: ' + this.state.author + ' has been posted and it contained: ' + this.state.body);
+        alert("Comment Added!");
         event.preventDefault();
 
         console.log(this.state.author);
