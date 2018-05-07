@@ -93,6 +93,11 @@ ul.header li a {
   margin-bottom: 10%;
 }
 
+.bottom-text {
+  text-shadow: 2px 2px 3px #6E6E6E;
+  font-size: 1em;
+}
+
 /* ------------------ FirstPage Styling ends ----------------- */
 
 
@@ -111,6 +116,19 @@ ul.header li a {
 }
 
 /* ------------------ About-component Styling ends -------------------- */
+
+
+/* ------------------- Exp comp Styling ------------------------- */
+
+
+
+.proj-pic {
+  width: 60%;
+  height: 75%;
+}
+
+
+/* ------------------- Exp comp Styling ends ------------------------- */
 
 
 
@@ -136,14 +154,50 @@ ul.header li a {
 
 .a-comment {
   background-color: rgba(255, 255, 255, 0.54);
-  border-radius: 1em 1em 1em 1em;
-  color: #6E6E6E;
-  text-shadow: 1px 1px 4px #FFFFFF;
+  border-radius: 0.5em 0.5em 0.5em 0.5em;
+  color: #707070;
+  text-shadow: 1px 1px 0.1px #FFFFFF;
+  margin-right: 1em;
 }
 
 .social-icon {
-  width: 20%;
+  width: 40%;
   height: 100%;
 }
 
+.social-icon:hover {
+  transform: rotate(360deg);
+  transition-duration: 1s;
+}
+
+.none-dec {
+  color: #FFFFFF;
+}
+
+.none-dec:hover {
+  color: #FFFFFF;
+}
+
+.comment-box {
+  overflow: auto;
+  height: 20vh;
+}
+
+.comment-box-in {
+  height: 40vh;
+}
+
+/* Scroll bar styling */
+.comment-box::-webkit-scrollbar {
+  width: 1em;
+} 
+
+/* Scroll bar styling */
+.comment-box::-webkit-scrollbar-thumb {
+background-color: #FF708B;
+}
+
+
 /* ------------------ Contact-page Styling ends -------------------- */
+
+
