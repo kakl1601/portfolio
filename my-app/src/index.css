@@ -154,9 +154,10 @@ ul.header li a {
 
 .a-comment {
   background-color: rgba(255, 255, 255, 0.54);
-  border-radius: 1em 1em 1em 1em;
-  color: #6E6E6E;
-  text-shadow: 1px 1px 4px #FFFFFF;
+  border-radius: 0.5em 0.5em 0.5em 0.5em;
+  color: #707070;
+  text-shadow: 1px 1px 0.1px #FFFFFF;
+  margin-right: 1em;
 }
 
 .social-icon {
@@ -177,4 +178,26 @@ ul.header li a {
   color: #FFFFFF;
 }
 
+.comment-box {
+  overflow: auto;
+  height: 20vh;
+}
+
+.comment-box-in {
+  height: 40vh;
+}
+
+/* Scroll bar styling */
+.comment-box::-webkit-scrollbar {
+  width: 1em;
+} 
+
+/* Scroll bar styling */
+.comment-box::-webkit-scrollbar-thumb {
+background-color: #FF708B;
+}
+
+
 /* ------------------ Contact-page Styling ends -------------------- */
+
+
