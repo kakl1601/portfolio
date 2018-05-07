@@ -27,19 +27,23 @@ class ContactForm extends React.Component {
     
     handleSubmit(event) {
 
-        fetch('http://localhost:8080/api/comments')
+ /*        fetch('http://localhost:8080/api/comments')
         .then(function(response) {
           return response.json();
         })
         .then(function(myJson) {
           console.log(myJson);
-        });
+        }); */
 
 
         fetch('http://localhost:8080/api/comments',
         {
             method: "POST",
-            body: JSON.stringify({author: this.state.author, body: this.state.body})
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+              },
+            body: JSON.stringify({name: this.state.author, comments: this.state.body})
         })
         .then(function(res){ 
             console.log(res);
@@ -48,7 +52,7 @@ class ContactForm extends React.Component {
             console.log(res); 
         })
   
-        alert('A message by: ' + this.state.author + ' has been posted and it contained: ' + this.state.body);
+        alert("Comment Added!");
         event.preventDefault();
 
         console.log(this.state.author);
@@ -57,7 +61,7 @@ class ContactForm extends React.Component {
     
     render() {
         return (
-            <Form action="/comments" onSubmit={this.handleSubmit} method="post">
+            <Form onSubmit={this.handleSubmit}>
                 <FormGroup row>
                     <Label for="author" sm={2}>Name</Label>
                     <Col sm={10}>
