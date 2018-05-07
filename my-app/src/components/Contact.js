@@ -12,7 +12,7 @@ class Contact extends React.Component {
                 <Col className="col-md .col-md-offset-1">
                     <h4 className="text-center mb-5 mt-5">Leave a comment</h4>
                     <ContactForm />
-                    {/* <Comments /> */}
+                    <Comments comment={this.props.comment}/>
                 </Col>
                 <Col>
                     <Row className="justify-content-center mt-5">
