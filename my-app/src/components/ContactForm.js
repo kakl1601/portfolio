@@ -36,7 +36,7 @@ class ContactForm extends React.Component {
         }); */
 
 
-        fetch('http://localhost:8080/api/comments',
+        fetch('https://arcane-headland-13816.herokuapp.com/api/comments',
         {
             method: "POST",
             headers: {
